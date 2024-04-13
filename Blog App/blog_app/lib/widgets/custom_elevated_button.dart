@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:blog_app/widgets/base_button.dart';
 import 'package:blog_app/core/app_export.dart';
+import 'base_button.dart';
 
 class CustomElevatedButton extends BaseButton {
   CustomElevatedButton({
@@ -45,22 +45,22 @@ class CustomElevatedButton extends BaseButton {
 
   Widget buildElevatedButtonWidget() {
     return Container(
-      height: this.height ?? 59.v,
-      width: this.width ?? double.maxFinite,
+      height: height ?? 59.0,
+      width: width ?? double.maxFinite,
       margin: margin,
       decoration: decoration,
       child: ElevatedButton(
-        style: buttonSty1e,
-        // onPressed: isDisabled ?? false ? null : onPressed ?? () {},
-        onPressed: isDisabled ?? false ? null : onPressed ?? () {},
+        style: buttonStyle,
+        onPressed: isDisabled ?? false ? null : onPressed,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            leftIcon ?? const SizedBox.shrink(),
-            Text(text,
-                style:
-                    buttonTextSty1e ?? CustomTextStyles.titleMediumWhiteA700),
+            const SizedBox.shrink(),
+            Text(
+              text,
+              style: buttonTextStyle ?? CustomTextStyles.titleMediumWhiteA700,
+            ),
             rightIcon ?? const SizedBox.shrink(),
           ],
         ),

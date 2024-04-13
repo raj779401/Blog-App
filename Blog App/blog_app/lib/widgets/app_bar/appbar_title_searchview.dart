@@ -21,7 +21,7 @@ class AppbarTitleSearchview extends StatelessWidget {
       child: CustomSearchView(
         width: 309.0,
         controller: controller,
-        hintText: "Ibl search".tr,
+        hintText: "Ibl search",
       ),
     );
   }

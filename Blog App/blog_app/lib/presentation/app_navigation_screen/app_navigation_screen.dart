@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:blog_app/core/app_export.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:blog_app/presentation/app_navigation_screen/notifiers/app_navigation_notifier.dart';
+import 'package:blog_app/routes/app_routes.dart';
 
 class AppNavigationScreen extends ConsumerStatefulWidget {
   const AppNavigationScreen({Key? key}) : super(key: key);
@@ -28,43 +29,43 @@ class AppNavigationScreenState extends ConsumerState<AppNavigationScreen> {
                       children: [
                         _buildScreenTitle(
                           context,
-                          screenTitle: "Ibl home".tr,
+                          screenTitle: "Ibl home",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.homeScreen),
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "Ibl sign in".tr,
+                          screenTitle: "Ibl sign in",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.signInScreen),
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "Ibl sign up".tr,
+                          screenTitle: "Ibl sign up",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.signUpScreen),
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "lbl interests".tr,
+                          screenTitle: "lbl interests",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.interestsScreen),
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "lbl search_topics".tr,
+                          screenTitle: "lbl search_topics",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.searchTopicsScreen),
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "msg_interests_people".tr,
+                          screenTitle: "msg_interests_people",
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.interestsPeopleTabContainerScreen),
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "Ibl explore".tr,
+                          screenTitle: "Ibl explore",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.exploreScreen),
                         ),
@@ -76,7 +77,7 @@ class AppNavigationScreenState extends ConsumerState<AppNavigationScreen> {
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "msg_terms and_conditions2".tr,
+                          screenTitle: "msg_terms and_conditions2",
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.termsAndConditionsScreen),
                         ),
@@ -88,7 +89,7 @@ class AppNavigationScreenState extends ConsumerState<AppNavigationScreen> {
                         ),
                         _buildScreenTitle(
                           context,
-                          screenTitle: "Ibl notifications".tr,
+                          screenTitle: "Ibl notifications",
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.notificationsScreen),
                         ),
@@ -116,7 +117,7 @@ Widget _buildAppNavigation(BuildContext context) {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.h),
             child: Text(
-              "Ibl_app_navigation".tr,
+              "Ibl_app_navigation",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: appTheme.black900,
@@ -133,7 +134,7 @@ Widget _buildAppNavigation(BuildContext context) {
           child: Padding(
             padding: EdgeInsets.only(left: 20.h),
             child: Text(
-              "msg_check_your_app_s".tr,
+              "msg_check_your_app_s",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: appTheme.blueGray400,

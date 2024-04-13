@@ -24,11 +24,11 @@ class InterestsNotifier extends StateNotifier<InterestsState> {
 
   void onselectedchipviewl(int index, bool value) {
     var newList = List<InterestsChipViewItemModel>.from(
-        state.interestsModeObj!.interestschipviewItemList);
-    newList[index] = newList[index].copyWith(isSe1ected: value);
+        state.interestsModeObj!.interestsChipViewItemList);
+    newList[index] = newList[index].copyWith(isSelected: value);
     state = state.copyWith(
-      interestsModeObj:
-          state.interestsModeObj?.copyWith(interestschipviewItemList: newList),
+      interestsModelObj:
+          state.interestsModeObj?.copyWith(interestsChipViewItemList: newList),
     );
   }
 }

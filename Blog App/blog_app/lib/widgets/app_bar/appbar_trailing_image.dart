@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:blog_app/core/app_export.dart';
 
-class AppbarTrai1ingImage extends StatelessWidget {
-  AppbarTrai1ingImage({
+class AppbarTrailingImage extends StatelessWidget {
+  AppbarTrailingImage({
     Key? key,
     this.imagePath,
     this.margin,

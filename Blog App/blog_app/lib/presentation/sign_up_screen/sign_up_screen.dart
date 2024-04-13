@@ -2,6 +2,9 @@ import 'package:blog_app/widgets/custom_outlined_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:blog_app/core/app_export.dart';
+import 'package:blog_app/routes/app_routes.dart';
+import 'package:blog_app/domain/googleauth/google_auth_helper.dart';
+import 'package:blog_app/domain/facebookauth/facebook_auth_helper.dart';
 import 'package:blog_app/presentation/sign_up_screen/notifiers/sign_up_notifier.dart';
 
 class SignUpScreen extends ConsumerStatefulWidget {
@@ -28,7 +31,7 @@ class SignUpScreenState extends ConsumerState<SignUpScreen> {
               ),
               SizedBox(height: 43.0.v),
               Text(
-                "Ibl register _ now".tr,
+                "Ibl register _ now",
                 style: theme.textTheme.headlineLarge,
               ),
               _buildSignUpWithGoogle(context),
@@ -45,7 +48,7 @@ class SignUpScreenState extends ConsumerState<SignUpScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "msg_already_have_an".tr,
+                      "msg_already_have_an",
                       style: theme.textTheme.bodyMedium,
                     ),
                     GestureDetector(
@@ -71,25 +74,25 @@ class SignUpScreenState extends ConsumerState<SignUpScreen> {
                   text: TextSpan(
                     children: [
                       TextSpan(
-                        "msg_by_signing_up_you2".tr,
-                        style: CustomTextStyles.bodySmallff818283,
+                        text: "msg_by_signing_up_you2",
+                        style: CustomTextStyles.bodySmallFF818283,
                       ),
                       TextSpan(
                         text: "msg_terms_of_service",
-                        style: CustomTextStyles.bodySmallff4Obfff,
+                        style: CustomTextStyles.bodySmallFF40BFFF,
                       ),
                       TextSpan(
-                        text: "msg_and_acknowledge".tr,
-                        style: CustomTextStyles.bodySmallff818283.copyWith(
+                        text: "msg_and_acknowledge",
+                        style: CustomTextStyles.bodySmallFF818283.copyWith(
                           height: 1.50,
                         ),
                       ),
                       TextSpan(
                         text: "lbl_privacy_policy",
-                        style: CustomTextStyles.bodySmallff4Obfff,
+                        style: CustomTextStyles.bodySmallFF40BFFF,
                       ),
                       TextSpan(
-                        style: CustomTextStyles.bodySmallff818283,
+                        style: CustomTextStyles.bodySmallFF818283,
                         text: "lbl_applies_to_you",
                       ),
                     ],
@@ -104,10 +107,9 @@ class SignUpScreenState extends ConsumerState<SignUpScreen> {
     );
   }
 
-  Widget buildSignUpWithGoogle(BuildContext context) {
+  Widget _buildSignUpWithGoogle(BuildContext context) {
     return CustomOutlinedButton(
-      "msg_sign_up_with_google".tr,
-      text: "msg_sign_up_with_google".tr,
+      text: "msg_sign_up_with_google",
       leftIcon: Container(
         margin: EdgeInsets.only(right: 10.0.h),
         child: CustomImageView(
@@ -124,8 +126,7 @@ class SignUpScreenState extends ConsumerState<SignUpScreen> {
 
   Widget _buildSignUpWithFacebook(BuildContext context) {
     return CustomOutlinedButton(
-      "msg_sign_up_with_facebook".tr,
-      text: "msg_sign_up_with_facebook".tr,
+      text: "msg_sign_up_with_facebook",
       leftIcon: Container(
         margin: EdgeInsets.only(right: 10.0.h),
         child: CustomImageView(
@@ -142,7 +143,7 @@ class SignUpScreenState extends ConsumerState<SignUpScreen> {
 
   Widget _buildSignUpWithTwitter(BuildContext context) {
     return CustomOutlinedButton(
-      text: "msg_sign_up_with_twitter".tr,
+      text: "msg_sign_up_with_twitter",
       leftIcon: Container(
         margin: EdgeInsets.only(right: 10.0.h),
         child: CustomImageView(
@@ -156,7 +157,7 @@ class SignUpScreenState extends ConsumerState<SignUpScreen> {
 
   Widget _buildSignUpWithApple(BuildContext context) {
     return CustomOutlinedButton(
-      text: "msg_sign_up_with_apple".tr,
+      text: "msg_sign_up_with_apple",
       leftIcon: Container(
         margin: EdgeInsets.only(right: 10.0.h),
         child: CustomImageView(

@@ -25,20 +25,20 @@ class NotificationsItemWidget extends StatelessWidget {
             width: 230.h,
             margin: EdgeInsets.only(left: 11.h),
             child: RichText(
-              text: Textspan(
+              text: TextSpan(
                 children: [
-                  Textspan(
-                    text: "Ibl bezaleel nwabia".tr,
+                  TextSpan(
+                    text: "Ibl bezaleel nwabia",
                     style: CustomTextStyles.bodyMediumFF0000,
                   ),
-                  Textspan(
+                  TextSpan(
                     text: "Ibl clapped _ for",
                     style: CustomTextStyles.bodyMediumFF818283,
                   ),
-                  Textspan(
-                      text: "msg_7_things_you need".tr,
+                  TextSpan(
+                      text: "msg_7_things_you need",
                       style: CustomTextStyles.bodyMediumFF0000),
-                  Textspan(
+                  TextSpan(
                     text: "Ibl 5 nov",
                     style: CustomTextStyles.bodyMediumFF818283,
                   ),

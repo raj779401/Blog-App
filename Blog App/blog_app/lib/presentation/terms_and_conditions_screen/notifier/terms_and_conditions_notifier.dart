@@ -1,7 +1,7 @@
-import 'package:blog_app/presentation/terms_and_condtions_screen/models/terms_and_conditions_model.dart';
+import 'package:blog_app/presentation/terms_and_conditions_screen/models/terms_and_conditions_model.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:blog_app/presentation/terms_and_condtions_screen/models/terms_and_conditions_model.dart';
+import 'package:blog_app/presentation/terms_and_conditions_screen/models/terms_and_conditions_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '/core/app_export.dart';
 

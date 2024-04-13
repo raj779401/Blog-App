@@ -2,7 +2,7 @@ import 'package:blog_app/widgets/app_bar/custom_app_bar.dart';
 import 'package:blog_app/widgets/app_bar/appbar_trailing_iconbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:blog_app/core/app_export.dart';
-import 'package:blog_app/presentation/terms_and_condtions_screen/notifier/terms_and_conditions_notifier.dart';
+import 'package:blog_app/presentation/terms_and_conditions_screen/notifier/terms_and_conditions_notifier.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class TermsAndConditionsScreen extends ConsumerStatefulWidget {
@@ -35,12 +35,12 @@ class TermsAndConditionsScreenState
                   ),
                   SizedBox(height: 13.0),
                   Text(
-                    "msg_effective september".tr,
+                    "msg_effective september",
                     style: CustomTextStyles.bodyMediumGray600,
                   ),
                   SizedBox(height: 24.0),
                   Text(
-                    "msg_you can see our".tr,
+                    "msg_you can see our",
                     style: CustomTextStyles.bodySmallBlack900,
                   ),
                   SizedBox(height: 23.0),
@@ -50,7 +50,7 @@ class TermsAndConditionsScreenState
                       width: 311.0,
                       margin: EdgeInsets.only(right: 23.0),
                       child: Text(
-                        "msg_lorem ipsum dolor5".tr,
+                        "msg_lorem ipsum dolor5",
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                         style: CustomTextStyles.bodyMediumBlack900
@@ -64,7 +64,7 @@ class TermsAndConditionsScreenState
                     child: SizedBox(
                       width: 335.0,
                       child: Text(
-                        "msg_lorem ipsum dolor4".tr,
+                        "msg_lorem ipsum dolor4",
                         maxLines: 6,
                         overflow: TextOverflow.ellipsis,
                         style: CustomTextStyles.bodyMediumBlack900
@@ -134,7 +134,7 @@ class TermsAndConditionsScreenState
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return CustomAppBar(
       actions: [
-        AppbarTrai1ingIconbutton(
+        AppbarTrailingIconbutton(
           imagepath: ImageConstant.imgClose,
           margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
         ),

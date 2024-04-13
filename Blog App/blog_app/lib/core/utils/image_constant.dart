@@ -3,7 +3,7 @@ class ImageConstant {
   static String imagePath = 'assets/images';
 
   // Home images
-  static String imgThumbnail1 = '$imagePath/img_thumbnail.png';
+  static String imgThumbnail = '$imagePath/img_thumbnail.png';
 
   // Interests People images
   static String imgProfilePicture = '';

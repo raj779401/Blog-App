@@ -6,23 +6,20 @@ class BaseButton extends StatelessWidget {
     Key? key,
     required this.text,
     this.onPressed,
-    this.buttonSty1e,
-    this.buttonTextSty1e,
-    this.isDisab1ed,
+    this.buttonStyle,
+    this.buttonTextStyle,
+    this.isDisabled,
     this.height,
     this.width,
     this.margin,
     this.alignment,
-    ButtonStyle? buttonStyle,
-    bool? isDisabled,
-    TextStyle? buttonTextStyle,
   }) : super(key: key);
 
   final String text;
   final VoidCallback? onPressed;
-  final ButtonStyle? buttonSty1e;
-  final TextStyle? buttonTextSty1e;
-  final bool? isDisab1ed;
+  final ButtonStyle? buttonStyle;
+  final TextStyle? buttonTextStyle;
+  bool? isDisabled;
   final double? height;
   final double? width;
   final EdgeInsets? margin;

@@ -30,7 +30,7 @@ class PrivacyPolicyScreenState extends ConsumerState<PrivacyPolicyScreen> {
                   Padding(
                     padding: EdgeInsets.only(left: 4.h),
                     child: Text(
-                      'lbl_privacy_policy2'.tr,
+                      'lbl_privacy_policy2',
                       style: CustomTextStyles.titleMediumBlack90018,
                     ),
                   ),
@@ -38,7 +38,7 @@ class PrivacyPolicyScreenState extends ConsumerState<PrivacyPolicyScreen> {
                   Padding(
                     padding: EdgeInsets.only(left: 4.h),
                     child: Text(
-                      'msg_effective september'.tr,
+                      'msg_effective september',
                       style: CustomTextStyles.titleMediumBlack90018,
                     ),
                   ),
@@ -46,7 +46,7 @@ class PrivacyPolicyScreenState extends ConsumerState<PrivacyPolicyScreen> {
                   Padding(
                     padding: EdgeInsets.only(left: 8.h),
                     child: Text(
-                      'msg_you can see our'.tr,
+                      'msg_you can see our',
                       style: CustomTextStyles.bodyMediumGray600,
                     ),
                   ),
@@ -54,7 +54,7 @@ class PrivacyPolicyScreenState extends ConsumerState<PrivacyPolicyScreen> {
                   Padding(
                     padding: EdgeInsets.only(left: 8.h),
                     child: Text(
-                      'msg_lorem ipsum dolor5'.tr,
+                      'msg_lorem ipsum dolor5',
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       style: CustomTextStyles.bodyMediumBlack900.copyWith(
@@ -72,7 +72,7 @@ class PrivacyPolicyScreenState extends ConsumerState<PrivacyPolicyScreen> {
                         vertical: 22.v,
                       ),
                       child: Text(
-                        'msg_lorem ipsum dolor4'.tr,
+                        'msg_lorem ipsum dolor4',
                         maxLines: 6,
                         overflow: TextOverflow.ellipsis,
                         style: CustomTextStyles.bodyMediumBlack900.copyWith(
@@ -90,7 +90,7 @@ class PrivacyPolicyScreenState extends ConsumerState<PrivacyPolicyScreen> {
                         vertical: 22.v,
                       ),
                       child: Text(
-                        'msg_lorem ipsum dolor4'.tr,
+                        'msg_lorem ipsum dolor4',
                         maxLines: 6,
                         overflow: TextOverflow.ellipsis,
                         style: CustomTextStyles.bodyMediumBlack900.copyWith(
@@ -108,7 +108,7 @@ class PrivacyPolicyScreenState extends ConsumerState<PrivacyPolicyScreen> {
                         right: 27.h,
                       ),
                       child: Text(
-                        'msg_lorem ipsum dolor5'.tr,
+                        'msg_lorem ipsum dolor5',
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                         style: CustomTextStyles.bodyMediumBlack900.copyWith(

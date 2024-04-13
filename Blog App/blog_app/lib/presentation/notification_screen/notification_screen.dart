@@ -85,7 +85,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
         },
       ),
       title: AppbarSubtitle(
-        text: "Ibl activity".tr,
+        text: "Ibl activity",
         margin: EdgeInsets.only(left: 133.h),
       ),
     );
